@@ -21,7 +21,7 @@ function App() {
 
       setAiResponse(result.data.aiResponse);
       setDbData(result.data.dbData);
-      setError(""); // Clear any previous errors
+      setError(""); 
     } catch (error) {
       console.error("Error sending data to the backend:", error.message);
       setError("An error occurred while processing your request.");
