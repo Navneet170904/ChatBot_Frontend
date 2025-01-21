@@ -15,7 +15,8 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const result = await axios.post("http://localhost:5000/api/data", {
+      const result = await axios.post("https://chatbot-backend-kappa-lime.vercel.app/api/data", {
+      // const result = await axios.post("http://localhost:5000/api/data", {
         text: query,
       });
 
